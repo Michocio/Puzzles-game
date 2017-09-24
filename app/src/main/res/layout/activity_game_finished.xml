@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.micha.puzzle.GameFinished"
+    android:background="#dc0e1210"
+    android:id="@+id/trans">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Gratulacje!"
+        android:id="@+id/success"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="50sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Imie"
+        android:ems="10"
+        android:layout_below="@+id/success"
+        android:id="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zapisz wynik"
+        android:id="@+id/button"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="62dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="saveScore" />
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Core"
+    android:id="@+id/tlo"
+    android:background="@drawable/tiles_bg5">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nowa gra"
+            android:id="@+id/newGame"
+            android:padding="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="newGame" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ustawienia"
+            android:id="@+id/settings"
+            android:layout_marginTop="20dp"
+            android:layout_alignRight="@+id/newGame"
+            android:layout_alignEnd="@+id/newGame"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_below="@+id/newGame"
+            android:layout_alignLeft="@+id/newGame"
+            android:layout_alignStart="@+id/newGame"
+            android:onClick="settings" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ranking"
+            android:id="@+id/ranking"
+            android:layout_marginTop="20dp"
+            android:layout_alignRight="@+id/newGame"
+            android:layout_alignEnd="@+id/newGame"
+            android:padding="20dp"
+            android:layout_below="@+id/settings"
+            android:layout_alignLeft="@+id/settings"
+            android:layout_alignStart="@+id/settings"
+            android:onClick="ranking" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wyjdź"
+            android:id="@+id/exit"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/ranking"
+            android:padding="20dp"
+            android:layout_alignRight="@+id/ranking"
+            android:layout_alignEnd="@+id/ranking"
+            android:layout_alignLeft="@+id/ranking"
+            android:layout_alignStart="@+id/ranking"
+            android:onClick="exit" />
+    </RelativeLayout>
+</RelativeLayout>
