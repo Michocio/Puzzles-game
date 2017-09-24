@@ -1,9 +1,10 @@
 # Puzzles
-Android game created in pure JAVA using Android sdk.
+Android game created in pure **JAVA** using **Android sdk**.
 
 Just shift puzzles and try to achieve best time.
 
-<h1> Features </h1>
+<h1> Features: </h1>
+
 * Choose number of puzzles
 * Leaderboard, try to be the best!
 * Adding custom image for game
